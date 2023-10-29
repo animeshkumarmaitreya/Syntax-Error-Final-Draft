@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Render Form from JSON</title>
+</head>
+<body>
+    <div><div class="box">Poem Title
+    <link rel="stylesheet"  href="frontend.css">
+        <div class="Name">
+            Sender
+        </div>
+        <div class="Verse">Verse</div>
+        <div class="Name">
+            Sender
+        </div>
+        <div class="Verse">Verse</div>
+        <div class="Name">
+            Sender
+        </div>
+        <div class="Verse">Verse</div>
+        <div class="Name">
+            Sender
+        </div>
+        <div class="Verse">Verse</div>
+    </div>
+    </div>
+
+    <!-- <script>
+        // JSON object representing the form fields
+        const formFields = [
+            {
+                name: "name",
+                label: "Name",
+                type: "text"
+            },
+            {
+                name: "sentence",
+                label: "Sentence",
+                type: "text"
+            }
+        ];
+
+        // Get the form container element
+        const formContainer = document.getElementById("form-container");
+
+        // Create a form element
+        const form = document.createElement("form");
+
+        // Iterate over the formFields array and create input elements
+        formFields.forEach(field => {
+            const label = document.createElement("label");
+            label.textContent = field.label;
+
+            const input = document.createElement("input");
+            input.type = field.type;
+            input.name = field.name;
+
+            form.appendChild(label);
+            form.appendChild(input);
+        });
+
+        // Create a submit button
+        const submitButton = document.createElement("input");
+        submitButton.type = "submit";
+        submitButton.value = "Submit";
+
+        form.appendChild(submitButton);
+
+        // Add the form to the form container
+        formContainer.appendChild(form);
+        appendChild(formContainer);
+        $(document).ready(function(){
+                $("#postAd").click(function(){
+                    $("#PostDiv").show();
+                });
+                var count=0;
+                $("#addBut").click(function(){
+                    $("#PostDiv").remove();
+                    $('body').after('<div class="content" id="first'+count+'"></div>'); //This is div which is supposed to be added after pressing submit button
+                    count++;
+                });
+            });
+        
+    </script> -->
+    <script>function createSenderBox() {
+        const senderBox = document.createElement("div");
+        senderBox.classList.add("box");
+    
+        const senderName = document.createElement("div");
+        senderName.classList.add("Name");
+        senderName.textContent = "Sender";
+    
+        const senderVerse = document.createElement("div");
+        senderVerse.classList.add("Verse");
+        senderVerse.textContent = "Verse";
+    
+        senderBox.appendChild(senderName);
+        senderBox.appendChild(senderVerse);
+    
+        return senderBox;
+        document.addEventListener("DOMContentLoaded", function() {
+    // Call the createSenderBox function 8 times and append the boxes to the body
+    for (let i = 0; i < 8; i++) {
+        const senderBox = createSenderBox();
+        document.body.appendChild(senderBox);
+        <div class="Name">
+            Sender
+        </div>
+    }
+});
+
+    }
+    </script>
+</body>
+</html>

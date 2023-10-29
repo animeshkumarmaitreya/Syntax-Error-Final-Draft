@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Glassmorphism Form</title>
+    <meta
+      name="google-signin-client_id"
+      content="YOUR_CLIENT_ID.apps.googleusercontent.com"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styleslo.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+    <form>
+      <h3>
+        <span>Sign up to your Account.</span>
+      </h3>
+      <label for="name">Name</label>
+      <input type="name" placeholder="Enter name" id="name" />
+      <label for="username">Username</label>
+      <input type="text" placeholder="Enter Username" id="username" />
+      <label for="password">Password</label>
+      <input type="password" placeholder="Enter Password" id="password" />
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" placeholder="Enter Password" id="password" />
+      <button>
+        <a
+          href="Layer02.html"
+          style="
+            margin-top: 50px;
+            width: 100%;
+            background-color: #fff;
+            color: #080710;
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 25px;
+            cursor: pointer;
+            text-decoration: none;
+          "
+          >Sign Up</a
+        >
+      </button>
+      <button>
+        Sign Up using
+        <span><img src="logos/logo.png" alt="google login" /></span> Account
+      </button>
+    </form>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+  </body>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+</html>

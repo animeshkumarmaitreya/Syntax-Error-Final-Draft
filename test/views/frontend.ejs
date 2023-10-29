@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Render Form from JSON</title>
+  </head>
+  <link rel="stylesheet" href="frontend.css" type="text/css" />
+  <body>
+    <div>
+      <div class="box">
+        <%=Poem %> <%messageArr.forEach((ele)=>{%>
+
+        <div class="Name"><%= ele.sender %></div>
+        <div class="Verse"><%= ele.message %></div>
+        <%});%>
+      </div>
+    </div>
+  </body>
+</html>

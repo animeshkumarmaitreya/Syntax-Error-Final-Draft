@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Glassmorphism Form</title>
+    <meta
+      name="google-signin-client_id"
+      content="YOUR_CLIENT_ID.apps.googleusercontent.com"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styleslo.css" type="text/css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+    <form action="/register" method="post">
+    <!-- <form id="form"> -->
+      <h3>
+        <span>Sign up to your Account.</span>
+      </h3>
+      <label for="name">Name</label>
+      <input type="name" placeholder="Enter name" id="name" name="name" />
+      <label for="username">Username</label>
+      <input
+        type="text"
+        placeholder="Enter Username"
+        id="username"
+        name="username"
+      />
+      <label for="password">Password</label>
+      <input
+        type="password"
+        placeholder="Enter Password"
+        id="password"
+        name="password"
+      />
+      <button id="btn">Sign Up</button>
+      <!-- <a
+          href="C:\Users\AADIT\Desktop\HTML CSS Course\Test website\Draft\website\Layer02.html"
+          style="
+            margin-top: 50px;
+            width: 100%;
+            background-color: #fff;
+            color: #080710;
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 25px;
+            cursor: pointer;
+            text-decoration: none;
+          "
+          >Sign Up
+        </a> -->
+      <button>
+        Sign Up using
+        <span><img src="logo.png" alt="google login" /></span> Account
+      </button>
+    </form>
+    <!-- <div class="g-signin2" data-onsuccess="onSignIn"></div> -->
+  </body>
+  <script>
+    console.log("click out");
+    const btn = document.getElementById("btn");
+    // console.log(btn);
+    const nameInput = document.getElementById("username");
+    const passwordInput = document.getElementById("password");
+
+    // btn.addEventListener("click", function () {
+    //   console.log("clicked");
+    //   const name = nameInput.value;
+    //   const password = passwordInput.value;
+    //   console.log(name, password);
+    //   const response = fetch("http://localhost:3000/register", {
+    //     method: "POST",
+    //     body: JSON.stringify({ name, password }),
+    //   });
+    // });
+  </script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+</html>

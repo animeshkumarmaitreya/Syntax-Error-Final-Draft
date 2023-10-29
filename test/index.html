@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport"
+        content="width=device-width,
+        initial-scale=1.0" />
+        <title>Next website</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+<script>
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+</script>
+
+    <body>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <div class="SyntaxLogo">
+                    <div class="container">
+                    <img class="logo" src="jamLogo.png">
+                </div>
+                </div>
+                <a href="index.html" id="navbar__logo">
+                    JAMFAM
+                </a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="#Home" class="navbar__links"> Home </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#About" class="navbar__links"> About </a>
+                    </li>
+                    
+                    <li class="navbar__btn">
+                        <a href="Login-Page.html" class="button"> Sign Up </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Hero section-->
+        <section><div class="main" id="Home">
+
+            <div class="main__container">
+                <div class="main__content">
+                    <h1>Ever played spin a yarn?</h1>
+                    <h2>We gave it a fun twist</h2>
+                    <p>Unleash the poet in you with JamFam!</p>
+                    <button class="main__btn"><a href="Login-Page.html">Get started</a></button>
+                </div>
+                <div class="main__img--container">
+                    <img src="images/organizer.svg" alt="pic" id="main__img">
+                </div>
+            </div>
+        </div>
+       </section>
+       <section>
+        <div class="features" id="About"><div class="CSSgal">
+
+            <!-- Don't wrap targets in parent -->
+            <s id="s1"></s> 
+            <s id="s2"></s>
+            <s id="s3"></s>
+            <s id="s4"></s>
+          
+            <div class="slider">
+              <div style="background:#5b8;">
+                <h2>Start your own Jam.</h2>
+                
+              </div>
+              <div style="background:#85b;">
+                <h2>Connect with your Friends.</h2>
+              </div>
+              <div style="background:#e95;">
+                <h2>Be a part of New Stories.</h2>
+              </div>
+              <div style="background:#e59;">
+                <h2>Revamp Literature with JamFam !</h2>
+              </div>
+            </div>
+            
+            <div class="prevNext">
+              <div><a href="#s4"></a><a href="#s2"></a></div>
+              <div><a href="#s1"></a><a href="#s3"></a></div>
+              <div><a href="#s2"></a><a href="#s4"></a></div>
+              <div><a href="#s3"></a><a href="#s1"></a></div>
+            </div>
+          
+            <div class="bullets">
+              <a href="#s1"><</a>
+              <a href="#s2">></a>
+              <!-- <a href="#s3">3</a> -->
+              <!-- <a href="#s4">4</a> -->
+            </div>
+          
+          </div></div>
+       </section>
+       <section>
+        <footer></footer>
+       </section>
+    </body>
+    <script src="app.js"></script>
+</html> 
