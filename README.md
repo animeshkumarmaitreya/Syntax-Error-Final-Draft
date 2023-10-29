@@ -6,3 +6,4 @@
 4. Full efforts were made for the execution for the chat messanging i.e thread generation process but due to constricted time-frames and inxperiences with working on react, node js and mongo DB, the above stated could not be executed successfully.
 5. Our framework switch sides while working in html css javascript to Learning React.js from the very scratch,
 6. We also worked on ideas involving API hat too our discovery didnt certified in authorization processes.
+7. Idea deals with creating a higly addictive fund way to give a new form to what we call reels in the present day.
